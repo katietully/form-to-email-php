@@ -8,7 +8,7 @@
 			<input type="text" placeholder="Your Email" id="email_from" />
 			<input type="text" placeholder="Email Subject" id="email_subject" />
 			<input type="text" placeholder="Email Text" id="email_text" />
-			<input type="hidden" value="katie@katietully.com" id="email_to" />
+			<input type="hidden" value="sample@email.com" id="email_to" />
 			<input type="submit" value="submit" id="submit" />
 		</form>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -26,7 +26,7 @@
 
 				$.ajax({
 					type: "POST",
-					url: 'http://projects.katietully.com/stewartstewart/email.php',
+					url: 'http://url-path', // URL for email.php file
 					data: {
 						email_to: emailTo
 						, email_subject: emailSubj
